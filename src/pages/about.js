@@ -1,11 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+import Header from '../components/header'
 
 const AboutPage = () => (
-    <Layout>
+    <div>
+        <Header />
         <h1>About Me</h1>
         <p>Adaptable software engineer, dog-lover</p>
-    </Layout>
+    </div>
 )
 
 export default AboutPage

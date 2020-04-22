@@ -1,11 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+import Header from "../components/header"
 
 const ProjectsPage = () => (
-    <Layout>
+    <div>
+        <Header />
         <h1>My Projects</h1>
         <p>Projects to date:</p>
-    </Layout>
+    </div>
 )
 
 export default ProjectsPage
