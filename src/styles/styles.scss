@@ -1,4 +1,14 @@
-$font: "monospace", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font: "monospace",
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
 
 //Colors
 $white: #fff;
@@ -9,23 +19,29 @@ $gunmetal: #022B3A;
 $gainsboro: #CCDBDC;
 $babypowder: #FCFCFC;
 
-html, body {
+html,
+body {
     font-family: font;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 1640px;
     min-width: 1640px;
     margin: 0 auto;
+
     @media(max-width: 1440px) {
         width: 1280px;
         min-width: 1280px;
     }
+
     @media(max-width: 1280px) {
         width: 976px;
         min-width: 976px;
     }
+
     @media(max-width: 976px) {
         width: 768px;
         min-width: 768px;
@@ -39,11 +55,13 @@ header {
     position: absolute;
     top: 0px;
     z-index: 10;
+
     .inner-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 80px;
+
         .logo {
             a {
                 font-weight: 700;
@@ -52,6 +70,7 @@ header {
                 color: $black;
             }
         }
+
         .navigation {
             nav {
                 a {
@@ -61,6 +80,7 @@ header {
                     text-transform: uppercase;
                     font-size: 0.75rem;
                     color: $black;
+
                     &:last-child {
                         margin-right: 0px;
                     }
@@ -78,8 +98,10 @@ header {
     background-color: $babypowder;
     position: relative;
     height: 100vh;
+
     .row {
         position: relative;
+
         .main-text {
             font-size: 5.8rem;
             text-transform: uppercase;
@@ -94,18 +116,21 @@ header {
             text-align: center;
             mix-blend-mode: difference;
             z-index: 9;
+
             @media(max-width: 1440px) {
                 font-size: 4.4rem;
                 letter-spacing: 36px;
                 width: 1280px;
                 min-width: 1280px;
             }
+
             @media(max-width: 1280px) {
                 font-size: 3.0rem;
                 letter-spacing: 30px;
                 width: 976px;
                 min-width: 976px;
             }
+
             @media(max-width: 976px) {
                 font-size: 2rem;
                 letter-spacing: 24px;
@@ -113,83 +138,108 @@ header {
                 min-width: 768px;
             }
         }
+
         .main-image {
-            width: 536px;
+            width: 1333px;
             margin: 0 auto;
+
             @media(max-width: 1440px) {
-                width: 436px;
+                width: 700px;
             }
+
             @media(max-width: 1280px) {
-                width: 360px;
+                width: 889px;
             }
+
             @media(max-width: 976px) {
-                width: 280px;
+                width: 677px;
             }
+
             @media(max-width: 768px) {
-                width: 180px;
+                width: 533px;
             }
         }
+
         .side-image {
             width: 260px;
             position: absolute;
+
             @media(max-width: 1440px) {
                 width: 208px;
             }
+
             @media(max-width: 1280px) {
                 width: 160px;
             }
+
             @media(max-width: 976px) {
                 width: 120px;
             }
+
             @media(max-width: 768px) {
                 width: 80px;
             }
+
             &.left {
                 left: 168px;
                 top: 12px;
+
                 @media(max-width: 1440px) {
                     left: 128px;
                 }
+
                 @media(max-width: 1280px) {
                     left: 96px;
                 }
+
                 @media(max-width: 976px) {
                     left: 56px;
                 }
+
                 @media(max-width: 768px) {
                     left: 24px;
                 }
             }
+
             &.right {
                 right: 168px;
                 bottom: 12px;
+
                 @media(max-width: 1440px) {
                     right: 128px;
                 }
+
                 @media(max-width: 1280px) {
                     right: 96px;
                 }
+
                 @media(max-width: 976px) {
                     right: 56px;
                 }
+
                 @media(max-width: 768px) {
                     right: 24px;
                 }
             }
+
             @media(max-width: 1440px) {
                 width: 208px;
             }
+
             @media(max-width: 1280px) {
                 width: 360px;
             }
+
             @media(max-width: 976px) {
                 width: 280px;
             }
+
             @media(max-width: 768px) {
                 width: 180px;
             }
         }
     }
+
     .scroll {
         font-weight: 700;
         font-size: 0.875rem;
@@ -198,5 +248,23 @@ header {
         text-transform: uppercase;
         position: absolute;
         bottom: 48px;
+    }
+
+    .fixed-misc {
+        position: fixed;
+        top: 50%;
+        right: 48px;
+        transform: rotate(-90deg);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
+        color: $babypowder;
+        mix-blend-mode: difference;
+        z-index: 8;
+
+        @media (max-width: 1440px) {
+            right: 112px;
+        }
     }
 }
