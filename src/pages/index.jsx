@@ -1,15 +1,17 @@
-import React from 'react';
-import '../styles/styles.scss';
-import Header from '../components/header';
-import Banner from '../components/banner';
-import About from '../components/about';
+import React from "react";
+import "../styles/styles.scss";
+import Header from "../components/header";
+import Banner from "../components/banner";
+import About from "../components/about";
+import Projects from "../components/projects";
 
 const IndexPage = () => (
-	<div>
-		<Header />
-		<Banner />
-		<About />
-	</div>
+    <div>
+        <Header />
+        <Banner />
+        <About />
+        <Projects />
+    </div>
 );
 
 export default IndexPage;
