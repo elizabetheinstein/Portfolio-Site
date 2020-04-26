@@ -12,13 +12,6 @@ const About = () => {
                     }
                 }
             }
-            kikoModel: file(relativePath: { eq: "kiko-model.jpeg" }) {
-                childImageSharp {
-                    fluid(maxWidth: 300) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
         }
     `);
     return (
@@ -27,7 +20,11 @@ const About = () => {
                 <div className="inner-text">
                     <div className="content">
                         <h3> About Me </h3>
-                        <p>Hi I'm Liz.</p>
+                        <p>
+                            Hi I'm Liz Einstein, and I'm a software engineer. I graduated from the Grace Hopper Program
+                            and specialized in the NERDs stack. In my free time, I enjoy reading, walking my dog, and
+                            learning new technologies and frameworks.
+                        </p>
                     </div>
                     <div className="images">
                         <div className="top-right">
