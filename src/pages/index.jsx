@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Banner from "../components/banner";
 import About from "../components/about";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
 
 const IndexPage = () => (
     <div>
@@ -11,6 +12,7 @@ const IndexPage = () => (
         <Banner />
         <About />
         <Projects />
+        <Contact />
     </div>
 );
 

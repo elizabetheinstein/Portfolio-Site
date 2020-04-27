@@ -25,6 +25,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    background: $babypowder;
 }
 
 .container {
@@ -48,11 +49,11 @@ body {
     }
 
     @media only screen and (max-width: 768px) {
-        width: 540px;
-        min-width: 540px;
+        width: 415px;
+        min-width: 415px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 415px) {
         width: 200px;
         min-width: 200px;
     }
@@ -108,6 +109,7 @@ header {
     background-color: $babypowder;
     position: relative;
     height: 100vh;
+    margin-bottom: 100px;
 
     .row {
         position: relative;
@@ -115,7 +117,7 @@ header {
         .main-text {
             font-size: 5.8rem;
             text-transform: uppercase;
-            letter-spacing: 42px;
+            letter-spacing: 30px;
             font-weight: 700;
             color: $babypowder;
             position: absolute;
@@ -126,163 +128,15 @@ header {
             text-align: center;
             mix-blend-mode: difference;
             z-index: 9;
-
-            @media only screen and (max-width: 1440px) {
-                font-size: 4.4rem;
-                letter-spacing: 36px;
-                width: 1280px;
-                min-width: 1280px;
-            }
-
-            @media only screen and (max-width: 1280px) {
-                font-size: 3.0rem;
-                letter-spacing: 30px;
-                width: 976px;
-                min-width: 976px;
-            }
-
-            @media only screen and (max-width: 976px) {
-                font-size: 2rem;
-                letter-spacing: 24px;
-                width: 768px;
-                min-width: 768px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                font-size: 1.5rem;
-                letter-spacing: 18px;
-                width: 540px;
-                min-width: 540px;
-            }
-
-            @media only screen and (max-width: 400px) {
-                font-size: 1rem;
-                letter-spacing: 12px;
-                width: 200px;
-                min-width: 200px;
-            }
         }
 
         .main-image {
-            width: 536px;
+            width: 75%;
             margin: 0 auto;
-
-            @media only screen and (max-width: 1440px) {
-                width: 436px;
-            }
-
-            @media only screen and (max-width: 1280px) {
-                width: 380px;
-            }
-
-            @media only screen and (max-width: 976px) {
-                width: 287px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                width: 200px;
-            }
-
-            @media only screen and (max-width: 400px) {
-                width: 100px;
-            }
-
+            align-self: center;
+            justify-self: center;
         }
 
-        .side-image {
-            width: 260px;
-            position: absolute;
-
-            @media only screen and (max-width: 1440px) {
-                width: 208px;
-            }
-
-            @media only screen and (max-width: 1280px) {
-                width: 160px;
-            }
-
-            @media only screen and (max-width: 976px) {
-                width: 120px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                width: 80px;
-            }
-
-            @media only screen and (max-width: 400px) {
-                width: 40px;
-            }
-
-            &.left {
-                left: 168px;
-                top: 12px;
-
-                @media only screen and (max-width: 1440px) {
-                    left: 128px;
-                }
-
-                @media only screen and (max-width: 1280px) {
-                    left: 96px;
-                }
-
-                @media only screen and (max-width: 976px) {
-                    left: 56px;
-                }
-
-                @media only screen and (max-width: 768px) {
-                    left: 24px;
-                }
-
-                @media only screen and (max-width: 400px) {
-                    left: 12px;
-                }
-            }
-
-            &.right {
-                right: 168px;
-                bottom: 12px;
-
-                @media only screen and (max-width: 1440px) {
-                    right: 128px;
-                }
-
-                @media only screen and (max-width: 1280px) {
-                    right: 96px;
-                }
-
-                @media only screen and (max-width: 976px) {
-                    right: 56px;
-                }
-
-                @media only screen and (max-width: 768px) {
-                    right: 24px;
-                }
-
-                @media only screen and (max-width: 400px) {
-                    right: 12px;
-                }
-            }
-
-            @media only screen and (max-width: 1440px) {
-                width: 208px;
-            }
-
-            @media only screen and (max-width: 1280px) {
-                width: 360px;
-            }
-
-            @media only screen and (max-width: 976px) {
-                width: 280px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                width: 180px;
-            }
-
-            @media only screen and (max-width: 400px) {
-                right: 90px;
-            }
-        }
     }
 
     .scroll {
@@ -292,7 +146,7 @@ header {
         color: $black;
         text-transform: uppercase;
         position: absolute;
-        bottom: 48px;
+        bottom: 60px;
     }
 
     .fixed-misc {
@@ -307,17 +161,14 @@ header {
         color: $babypowder;
         mix-blend-mode: difference;
         z-index: 8;
-
-        @media (max-width: 1440px) {
-            right: 112px;
-        }
     }
 }
 
 #about {
     position: relative;
-    padding: 48px 0;
+    padding: 48px 0 24px;
     background: $babypowder;
+    border: $gunmetal solid;
 
     .inner-text {
         display: flex;
@@ -325,23 +176,7 @@ header {
         align-items: flex-start;
 
         .content {
-            width: 30%;
-
-            @media only screen and (max-width: 1440px) {
-                width: 40%;
-            }
-
-            @media only screen and (max-width: 976px) {
-                width: 45%;
-            }
-
-            @media only screen and (max-width: 768px) {
-                width: 50%;
-            }
-
-            @media only screen and (max-width: 400px) {
-                width: 40%;
-            }
+            width: 50%;
 
             h3 {
                 font-weight: 700;
@@ -371,88 +206,26 @@ header {
 
         .images {
             width: 50%;
-            height: 1000px;
             position: relative;
             z-index: 7;
-
-            @media only screen and (max-width: 1440px) {
-                height: 800px;
-            }
-
-            @media only screen and (max-width: 976px) {
-                height: 600px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                height: 400px;
-            }
-
-            @media only screen and (max-width: 400px) {
-                height: 200px;
-            }
+            height: 500px;
 
             .top-right {
                 position: absolute;
-                width: 436px;
+                width: 50%;
                 top: 0;
-                right: 0;
+                right: 10%;
                 z-index: 4;
-
-                @media only screen and (max-width: 1440px) {
-                    width: 316px;
-                }
-
-                @media only screen and (max-width: 1280px) {
-                    width: 250px;
-                }
-
-                @media only screen and (max-width: 976px) {
-                    width: 200px;
-                }
-
-                @media only screen and (max-width: 768px) {
-                    width: 175px;
-                }
-
-                @media only screen and (max-width: 400px) {
-                    width: 50px;
-                }
             }
-
-            // .bottom-left {
-            //     position: absolute;
-            //     width: 410px;
-            //     left: 0;
-            //     bottom: 0;
-
-            //     @media only screen and (max-width: 1440px) {
-            //         width: 310px;
-            //     }
-
-            //     @media only screen and (max-width: 1280px) {
-            //         width: 250px;
-            //     }
-
-            //     @media only screen and (max-width: 976px) {
-            //         width: 200px;
-            //     }
-
-            //     @media only screen and (max-width: 768px) {
-            //         width: 175px;
-            //     }
-
-            //     @media only screen and (max-width: 400px) {
-            //         width: 50px;
-            //     }
-            // }
         }
     }
 }
 
 #projects {
     position: relative;
-    padding: 48px 0;
+    padding: 48px;
     background: $babypowder;
+    border: $gunmetal solid;
 
     .inner-text {
         margin: 0 auto;
@@ -474,6 +247,7 @@ header {
                 align-self: center;
                 grid-gap: 10px;
                 max-width: 100%;
+                margin: 10;
 
                 p {
                     font-size: 1rem;
@@ -486,12 +260,30 @@ header {
                     max-width: 80%;
                     align-self: center;
                     justify-self: center;
+
+                    a {
+                        text-decoration: underline;
+                        color: $gunmetal
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
                 }
 
                 .hive {
                     max-width: 80%;
                     align-self: center;
                     justify-self: center;
+
+                    a {
+                        text-decoration: underline;
+                        color: $gunmetal
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -530,6 +322,10 @@ header {
                         max-width: 80%;
                         align-self: left;
                         justify-self: left;
+
+                        span {
+                            font-weight: bold;
+                        }
                     }
 
                     .hive {
@@ -541,5 +337,27 @@ header {
             }
         }
     }
+}
 
+#contact {
+    a {
+        text-decoration: none;
+        color: $gunmetal;
+    }
+
+    .logos {
+        display: grid;
+
+        .linkedin {
+            width: 10%;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .github {
+            width: 10%;
+            align-self: center;
+            justify-self: center;
+        }
+    }
 }
