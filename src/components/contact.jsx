@@ -52,6 +52,9 @@ const Contact = () => {
                                 <Img fluid={data.github.childImageSharp.fluid} />
                             </div>
                         </div>
+                        <div className="contact-form">
+                            <p>Form placeholder</p>
+                        </div>
                     </div>
                 </div>
             </div>

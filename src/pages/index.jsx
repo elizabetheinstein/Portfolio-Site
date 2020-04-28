@@ -5,12 +5,14 @@ import Banner from "../components/banner";
 import About from "../components/about";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
+import Skills from "../components/skills";
 
 const IndexPage = () => (
     <div>
         <Header />
         <Banner />
         <About />
+        <Skills />
         <Projects />
         <Contact />
     </div>
