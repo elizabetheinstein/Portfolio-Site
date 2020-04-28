@@ -28,7 +28,11 @@ const Contact = () => {
                     <div className="content">
                         <h3>Contact</h3>
                         <div className="links">
-                            <a href="/einstein-resume-2020.pdf" download="/einstein-resume-2020.pdf">
+                            <a
+                                href="/einstein-resume-2020.pdf"
+                                download="/einstein-resume-2020.pdf"
+                                rel="noopener noreferrer"
+                            >
                                 Resume
                             </a>
                             <a

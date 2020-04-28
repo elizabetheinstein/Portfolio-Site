@@ -164,7 +164,7 @@ header {
 //About Me
 #about {
     position: relative;
-    padding: 48px 0 24px;
+    padding: 48px 0 120px;
     background: $babypowder;
     border: $gunmetal solid;
 
@@ -185,19 +185,11 @@ header {
             }
 
             p {
+
                 font-size: 1rem;
                 line-height: 2rem;
                 font-weight: 300;
                 margin: 40px 0 72px;
-            }
-
-            .button-row {
-                font-weight: 700;
-                font-size: .875rem;
-                letter-spacing: 1.5px;
-                color: $gunmetal;
-                text-transform: uppercase;
-                text-decoration: none;
             }
 
         }
@@ -206,10 +198,12 @@ header {
             width: 50%;
             position: relative;
             z-index: 7;
-            height: 500px;
+            height: auto;
+            margin: 0 0 20px;
 
             .top-right {
                 position: absolute;
+
                 width: 50%;
                 top: 0;
                 right: 10%;
@@ -222,20 +216,29 @@ header {
 .skills {
     border: $gunmetal solid;
 
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 40px 40px 40px 40px;
+    }
+
     h3 {
         font-weight: 700;
         text-transform: uppercase;
         font-size: 1.8rem;
         letter-spacing: 1.5px;
-        margin: 10;
+        margin: 5;
+        padding: 40px 48px 0 48px;
     }
 
     .inner-text {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin-top: 20px;
         margin-bottom: 20px;
-        background-color: $celeste;
+        padding: 40px;
+        background-color: $gainsboro;
 
         h4 {
             font-weight: 500;
@@ -247,6 +250,7 @@ header {
 
         p {
             text-align: center;
+            margin: 12px;
         }
     }
 }
