@@ -29,7 +29,7 @@ const Projects = () => {
                         <h3> Projects </h3>
                         <div className="projects-grid">
                             <div className="lalalime">
-                                <a href="http://lalalime.herokuapp.com/" target="_blank">
+                                <a href="http://lalalime.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                     <Img fluid={data.lalalime.childImageSharp.fluid} />
                                 </a>
 
@@ -38,12 +38,16 @@ const Projects = () => {
                                     JavaScript, Node, Express, Sequelize, PostgreSQL, React, Redux, Stripe API, Heroku,
                                     Travis CI
                                 </p>
-                                <a href="https://github.com/1911-GH-GraceShopper-LaLaLime/LaLaLime" target="_blank">
+                                <a
+                                    href="https://github.com/1911-GH-GraceShopper-LaLaLime/LaLaLime"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Github
                                 </a>
                             </div>
                             <div className="hive">
-                                <a href="http://hivebymlln.herokuapp.com" target="_blank">
+                                <a href="http://hivebymlln.herokuapp.com" target="_blank" rel="noopener noreferrer">
                                     <Img fluid={data.hive.childImageSharp.fluid} />
                                 </a>
                                 <p>
@@ -51,7 +55,7 @@ const Projects = () => {
                                     TypeScript, Node, Express, TypeORM, PostgreSQL, React, Redux, Fabric.js, Socket.io,
                                     Heroku
                                 </p>
-                                <a href="https://github.com/themlln/hive" target="_blank">
+                                <a href="https://github.com/themlln/hive" target="_blank" rel="noopener noreferrer">
                                     Github
                                 </a>
                             </div>
