@@ -23,11 +23,8 @@ const Banner = () => {
                         <Img fluid={data.mountains.childImageSharp.fluid} />
                     </div>
                 </div>
-                <div className="scroll">
-                    <span>Scroll Down</span>
-                </div>
             </div>
-            <div className="fixed-misc">Lizzo</div>
+            <div className="fixed-misc">Liz//Software Engineer</div>
         </div>
     );
 };

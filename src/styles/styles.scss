@@ -1,5 +1,4 @@
-$font: "monospace",
--apple-system,
+$font: -apple-system,
 BlinkMacSystemFont,
 'Segoe UI',
 Roboto,
@@ -128,7 +127,7 @@ header {
         }
 
         .main-image {
-            width: 75%;
+            width: 80%;
             margin: 0 auto;
             align-self: center;
             justify-self: center;
@@ -136,20 +135,10 @@ header {
 
     }
 
-    .scroll {
-        font-weight: 700;
-        font-size: 0.875rem;
-        letter-spacing: 1.5px;
-        color: $gunmetal;
-        text-transform: uppercase;
-        position: absolute;
-        bottom: 60px;
-    }
-
     .fixed-misc {
         position: fixed;
         top: 50%;
-        right: 48px;
+        right: 0px;
         transform: rotate(-90deg);
         font-weight: 700;
         text-transform: uppercase;
@@ -165,8 +154,7 @@ header {
 #about {
     position: relative;
     padding: 48px 0 120px;
-    background: $babypowder;
-    border: $gunmetal solid;
+    background: whitesmoke;
 
     .inner-text {
         display: flex;
@@ -214,7 +202,6 @@ header {
 }
 
 .skills {
-    border: $gunmetal solid;
 
     .container {
         display: flex;
@@ -229,16 +216,13 @@ header {
         font-size: 1.8rem;
         letter-spacing: 1.5px;
         margin: 5;
-        padding: 40px 48px 0 48px;
+        padding: 0 48px 0 48px;
     }
 
     .inner-text {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 40px;
-        background-color: $gainsboro;
+        padding: 20px 80px 20px 80px;
 
         h4 {
             font-weight: 500;
@@ -259,8 +243,7 @@ header {
 #projects {
     position: relative;
     padding: 48px;
-    background: $babypowder;
-    border: $gunmetal solid;
+    background: whitesmoke;
 
     .inner-text {
         margin: 0 auto;
@@ -376,7 +359,6 @@ header {
 
 //Contact
 #contact {
-    border: $gunmetal solid;
     background-color: $babypowder;
 
     .inner-text {

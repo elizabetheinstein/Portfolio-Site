@@ -33,7 +33,6 @@ const Skills = () => {
                         <p>Spanish (fluent)</p>
                         <p>Scrum/Agile</p>
                         <p>Project Management</p>
-                        <p>placeholder</p>
                     </div>
                 </div>
             </div>
