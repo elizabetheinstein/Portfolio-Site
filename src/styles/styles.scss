@@ -60,9 +60,10 @@ body {
 header {
     height: 80px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 10;
+    background-color: $babypowder;
 
     .inner-header {
         display: flex;
@@ -138,7 +139,7 @@ header {
     .fixed-misc {
         position: fixed;
         top: 50%;
-        right: 0px;
+        right: -100px;
         transform: rotate(-90deg);
         font-weight: 700;
         text-transform: uppercase;
@@ -153,7 +154,7 @@ header {
 //About Me
 #about {
     position: relative;
-    padding: 48px 0 120px;
+    padding: 48px 0 160px;
     background: whitesmoke;
 
     .inner-text {

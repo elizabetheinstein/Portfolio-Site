@@ -18,13 +18,13 @@ const Banner = () => {
         <div className="banner">
             <div className="container">
                 <div className="row">
-                    <div className="main-text">Liz Einstein</div>
+                    <div className="main-text">Elizabeth Einstein</div>
                     <div className="main-image">
                         <Img fluid={data.mountains.childImageSharp.fluid} />
                     </div>
                 </div>
             </div>
-            <div className="fixed-misc">Liz//Software Engineer</div>
+            <div className="fixed-misc">Elizabeth Einstein // Software Engineer</div>
         </div>
     );
 };
