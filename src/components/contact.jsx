@@ -25,40 +25,40 @@ const Contact = () => {
         <div id="contact">
             <div className="container">
                 <div className="inner-text">
+                    <h3>Contact</h3>
                     <div className="content">
-                        <h3>Contact</h3>
-                        <div className="links">
+                        <div className="resume">
                             <a
-                                href="/einstein-resume-2020.pdf"
-                                download="/einstein-resume-2020.pdf"
+                                href="/eeinstein_resume.pdf"
+                                download="/eeinstein_resume.pdf"
                                 rel="noopener noreferrer"
                             >
                                 Resume
                             </a>
+                        </div>
+                        <div className="logo-container">
                             <a
                                 href="https://www.linkedin.com/in/elizabeth-einstein"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                LinkedIn
+                                <div className="logo">
+                                    <Img fluid={data.linkedin.childImageSharp.fluid} />
+                                </div>
                             </a>
-                            <div className="logo">
-                                <Img fluid={data.linkedin.childImageSharp.fluid} />
-                            </div>
                             <a
                                 href="https://www.github.com/elizabetheinstein"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Github
+                                <div className="logo">
+                                    <Img fluid={data.github.childImageSharp.fluid} />
+                                </div>
                             </a>
-                            <div className="logo">
-                                <Img fluid={data.github.childImageSharp.fluid} />
-                            </div>
                         </div>
-                        <div className="contact-form">
-                            <p>Form placeholder</p>
-                        </div>
+                    </div>
+                    <div className="contact-form">
+                        <p>Form placeholder</p>
                     </div>
                 </div>
             </div>

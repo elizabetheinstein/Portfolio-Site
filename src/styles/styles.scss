@@ -1,20 +1,12 @@
-$font: -apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-'Open Sans',
-'Helvetica Neue',
-sans-serif;
+$font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
 
 //Colors
-$blue: #0091AD;
-$celeste: #9BF3F0;
-$gunmetal: #022B3A;
-$gainsboro: #CCDBDC;
-$babypowder: #FCFCFC;
+$blue: #0091ad;
+$celeste: #9bf3f0;
+$gunmetal: #022b3a;
+$gainsboro: #ccdbdc;
+$babypowder: #fcfcfc;
 
 html,
 body {
@@ -58,7 +50,7 @@ body {
 
 //Header
 header {
-    height: 80px;
+    height: 40px;
     width: 100%;
     position: fixed;
     top: 0px;
@@ -69,7 +61,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 80px;
+        height: 40px;
 
         .logo {
             a {
@@ -133,7 +125,6 @@ header {
             align-self: center;
             justify-self: center;
         }
-
     }
 
     .fixed-misc {
@@ -174,13 +165,11 @@ header {
             }
 
             p {
-
                 font-size: 1rem;
                 line-height: 2rem;
                 font-weight: 300;
                 margin: 40px 0 72px;
             }
-
         }
 
         .images {
@@ -203,7 +192,6 @@ header {
 }
 
 .skills {
-
     .container {
         display: flex;
         flex-direction: row;
@@ -272,7 +260,6 @@ header {
                     font-size: 1rem;
                     line-height: 1.5rem;
                     font-weight: 300;
-
                 }
 
                 .lalalime {
@@ -282,7 +269,7 @@ header {
 
                     a {
                         text-decoration: underline;
-                        color: $gunmetal
+                        color: $gunmetal;
                     }
 
                     span {
@@ -297,7 +284,7 @@ header {
 
                     a {
                         text-decoration: underline;
-                        color: $gunmetal
+                        color: $gunmetal;
                     }
 
                     span {
@@ -334,7 +321,6 @@ header {
                         font-size: .75rem;
                         line-height: 1rem;
                         font-weight: 300;
-
                     }
 
                     .lalalime {
@@ -366,40 +352,38 @@ header {
         margin-bottom: 50px;
         padding: 10px;
 
+        h3 {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            letter-spacing: 1.5px;
+            margin: 10;
+        }
+
         .content {
             display: flex;
             flex-direction: column;
 
-            h3 {
-                font-weight: 700;
-                text-transform: uppercase;
-                font-size: 1.8rem;
-                letter-spacing: 1.5px;
-                margin: 10;
-            }
-
-            .links {
-                margin-left: 5px;
-                flex-direction: column;
-                justify-content: center;
-
+            .resume {
                 a {
-                    align-items: right;
-                    justify-content: center;
                     color: $gunmetal;
                     opacity: 0.15;
                     text-decoration: none;
                     font-size: 1.5rem;
-                    padding: 0 10px;
                 }
 
                 a:hover {
                     opacity: 1;
                 }
+            }
+            .logo-container {
+                display: grid;
+                grid-template-columns: repeat(2, 3%);
+                padding: 10px 0;
 
                 .logo {
+                    vertical-align: text-top;
                     max-width: 25px;
-                    margin-left: 4px;
                     margin-right: 2px;
                 }
             }
@@ -408,8 +392,5 @@ header {
                 width: 50%;
             }
         }
-
-
     }
-
 }
