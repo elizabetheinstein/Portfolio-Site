@@ -115,7 +115,7 @@ header {
             top: 50%;
             transform: translateY(-50%);
             text-align: center;
-            mix-blend-mode: difference;
+            mix-blend-mode: hard-light;
             z-index: 9;
         }
 
