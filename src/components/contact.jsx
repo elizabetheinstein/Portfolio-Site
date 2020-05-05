@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import ContactForm from './contact-form'
 
 const Contact = () => {
     const data = useStaticQuery(graphql`
@@ -58,7 +59,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="contact-form">
-                        <p>Form placeholder</p>
+                        <ContactForm />
                     </div>
                 </div>
             </div>
