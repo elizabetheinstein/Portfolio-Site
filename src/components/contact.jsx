@@ -16,8 +16,7 @@ const Contact = () => {
                             <div className="info">
                                 <div className="resume">
                                     <a
-                                        href="/eeinstein_resume.pdf"
-                                        download="/eeinstein_resume.pdf"
+                                        href="https://github.com/elizabetheinstein/Portfolio-Site/raw/master/assets/eeinstein_resume.pdf"
                                         rel="noopener noreferrer"
                                     >
                                         Resume
