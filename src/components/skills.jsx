@@ -6,6 +6,7 @@ const Skills = () => {
             <div className="container">
                 <div className="skills-header">
                     <h3>Skills</h3>
+                    <p>I learned to code at the Grace Hopper Program at Fullstack Academy.</p>
                 </div>
                 <div className="inner-text">
                     <div>
