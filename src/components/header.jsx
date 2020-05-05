@@ -6,7 +6,7 @@ const Header = () => (
         <div className="container">
             <div className="inner-header">
                 <div className="logo">
-                    <Link to="/">EE</Link>
+                    <Link to="/">Elizabeth Einstein</Link>
                 </div>
                 <div className="navigation">
                     <nav>

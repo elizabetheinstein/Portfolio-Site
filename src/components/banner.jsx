@@ -24,7 +24,6 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className="fixed-misc">Elizabeth Einstein // Software Engineer</div>
         </div>
     );
 };
