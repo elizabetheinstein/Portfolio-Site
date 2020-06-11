@@ -97,7 +97,7 @@ header {
     align-items: center;
     background-color: $babypowder;
     position: relative;
-    height: 100vh;
+    margin-top: 100px;
     margin-bottom: 100px;
 
     .row {
@@ -125,20 +125,6 @@ header {
             align-self: center;
             justify-self: center;
         }
-    }
-
-    .fixed-misc {
-        position: fixed;
-        top: 50%;
-        right: -100px;
-        transform: rotate(-90deg);
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 0.875rem;
-        letter-spacing: 1.5px;
-        color: $babypowder;
-        mix-blend-mode: difference;
-        z-index: 8;
     }
 }
 
@@ -519,7 +505,4 @@ header {
             }
         }
     }
-    
-
-    
 }
