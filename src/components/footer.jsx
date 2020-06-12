@@ -24,33 +24,31 @@ const Footer = () => {
 
     return (
         <div id="footer">
-            <div className="container">
-                <div className="footer-content">
-                    <div className="logo-container">
-                        <div className="logo-grid">
-                            <a
-                                href="https://www.linkedin.com/in/elizabeth-einstein"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div className="logo">
-                                    <Img fluid={data.linkedin.childImageSharp.fluid} />
-                                </div>
-                            </a>
-                            <a
-                                href="https://www.github.com/elizabetheinstein"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div className="logo">
-                                    <Img fluid={data.github.childImageSharp.fluid} />
-                                </div>
-                            </a>
-                        </div>
+            <div className="footer-content">
+                <div className="logo-container">
+                    <div className="logo-grid">
+                        <a
+                            href="https://www.linkedin.com/in/elizabeth-einstein"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="logo">
+                                <Img fluid={data.linkedin.childImageSharp.fluid} />
+                            </div>
+                        </a>
+                        <a
+                            href="https://www.github.com/elizabetheinstein"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="logo">
+                                <Img fluid={data.github.childImageSharp.fluid} />
+                            </div>
+                        </a>
                     </div>
-                    <div className="copyright">
-                        <p>© Elizabeth Einstein 2020</p>
-                    </div>
+                </div>
+                <div className="copyright">
+                    <p>© Elizabeth Einstein 2020</p>
                 </div>
             </div>
         </div>
