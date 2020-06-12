@@ -44,7 +44,13 @@ const ContactForm = () => {
     return (
         <div className="form-container">
             <h4>Get in Touch</h4>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field" method="post" required>
+                <input type="hidden" name="contact" value="contact" />
+                <p type="hidden">
+                    <label>
+                        <input name="bot-field" />
+                    </label>
+                </p>
                 <div className="name-email">
                     <div className="name">
                         <label htmlFor="from_name">Name</label>
@@ -52,16 +58,16 @@ const ContactForm = () => {
                     </div>
                     <div className="email">
                         <label htmlFor="email">Email</label>
-                        <input type="text" name="email" className="input-email" value={email} onChange={handleEmailChange} />
+                        <input type="email" name="email" className="input-email" value={email} onChange={handleEmailChange} />
                     </div>
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
-                    <input type="text" name="message" className="input-message" value={message} onChange={handleMessageChange} />
+                    <textarea name="message" className="input-message" value={message} onChange={handleMessageChange} />
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-        </div>
+        </div >
     )
 }
 
