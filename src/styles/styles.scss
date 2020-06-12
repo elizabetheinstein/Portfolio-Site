@@ -95,7 +95,8 @@ header {
             position: relative;
 
             .main-text {
-                font-size: 5.8rem;
+                margin-left: 10px;
+                font-size: 6rem;
                 text-transform: uppercase;
                 letter-spacing: 30px;
                 font-weight: 700;
@@ -119,6 +120,19 @@ header {
         }
 
         @media only screen and (max-width: 1024px) {
+            .row {
+                .main-text {
+                    font-size: 5.8rem;
+                    letter-spacing: 20px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
             .row {
                 .main-text {
                     font-size: 4.2rem;
@@ -193,7 +207,7 @@ header {
     position: relative;
     .inner-skills {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         margin: 40px 40px;
 
@@ -212,7 +226,21 @@ header {
                 font-weight: 300;
             }
         }
-        
+        .inner-text {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+
+            h4 {
+                margin: 10px 0px;
+            }
+
+            .tech {
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+        }
     }
 }
 
