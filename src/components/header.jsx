@@ -3,19 +3,17 @@ import React from "react";
 
 const Header = () => (
     <header>
-        <div className="container">
-            <div className="inner-header">
-                <div className="logo">
-                    <Link to="/">Elizabeth Einstein</Link>
-                </div>
-                <div className="navigation">
-                    <nav>
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                        <a href="https://github.com/elizabetheinstein/Portfolio-Site/raw/master/assets/eeinstein_resume.pdf">Resume</a>
-                    </nav>
-                </div>
+        <div className="inner-header">
+            <div className="logo">
+                <Link to="/">Elizabeth Einstein</Link>
+            </div>
+            <div className="navigation">
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://github.com/elizabetheinstein/Portfolio-Site/raw/master/assets/eeinstein_resume.pdf">Resume</a>
+                </nav>
             </div>
         </div>
     </header>

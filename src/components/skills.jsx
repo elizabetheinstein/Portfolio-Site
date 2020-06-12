@@ -3,43 +3,48 @@ import React from "react";
 const Skills = () => {
     return (
         <div className="skills">
-            <div className="container">
-                <div className="inner-skills">
-                    <div className="skills-header">
-                        <h3>Skills</h3>
-                        <p>I learned to code at the Grace Hopper Program at Fullstack Academy in New York City. I'm excited to keep growing my skill set to become a more efficient developer.</p>
-                    </div>
-                    <div className="inner-text">
-                        <div>
-                            <h4>Frontend</h4>
-                            <p>React</p>
-                            <p>Redux</p>
-                            <p>Webpack</p>
+            <div className="inner-skills">
+                <div className="skills-header">
+                    <h3>Skills</h3>
+                    <p>I learned to code at the Grace Hopper Program at Fullstack Academy in New York City. I'm excited to keep growing my skill set to become a more efficient developer.</p>
+                </div>
+                <div className="inner-text">
+                    <div>
+                        <h4>Languages</h4>
+                        <div className="tech">
+                            <p>JavaScript</p>
+                            <p>TypeScript</p>
+                            <p>Python</p>
                         </div>
-                        <div>
-                            <h4>Backend</h4>
-                            <p>Node.js</p>
+                    </div>
+                    <div>
+                        <h4>Databases</h4>
+                        <div className="tech">
                             <p>MongoDB</p>
                             <p>PostgreSQL</p>
-                            <p>RESTful API</p>
-                            <p>GraphQL</p>
                         </div>
-                        <div>
-                            <h4>DevOps</h4>
+                    </div>
+                    <div>
+                        <h4>Libraries and Frameworks</h4>
+                        <div className="tech">
+                            <p>Node.js</p>
+                            <p>React</p>
+                            <p>Redux</p>
+                            <p>Apollo</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>DevOps</h4>
+                        <div className="tech">
+                            <p>Git</p>
                             <p>Heroku</p>
                             <p>Travis CI</p>
-                            <p>Git</p>
-                        </div>
-                        <div>
-                            <h4>Additional</h4>
-                            <p>Spanish (fluent)</p>
-                            <p>Scrum/Agile</p>
-                            <p>Project Management</p>
+                            <p>AWS</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

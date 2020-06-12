@@ -1,6 +1,6 @@
 $font: Chivo, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
-
+    
 //Colors
 $blue: #0091ad;
 $celeste: #9bf3f0;
@@ -17,37 +17,6 @@ body {
     background: $babypowder;
 }
 
-.container {
-    width: 1640px;
-    min-width: 1640px;
-    margin: 0 auto;
-
-    @media only screen and (max-width: 1440px) {
-        width: 1280px;
-        min-width: 1280px;
-    }
-
-    @media only screen and (max-width: 1280px) {
-        width: 976px;
-        min-width: 976px;
-    }
-
-    @media only screen and (max-width: 976px) {
-        width: 768px;
-        min-width: 768px;
-    }
-
-    @media only screen and (max-width: 768px) {
-        width: 415px;
-        min-width: 415px;
-    }
-
-    @media only screen and (max-width: 415px) {
-        width: 200px;
-        min-width: 200px;
-    }
-}
-
 //Header
 header {
     height: 40px;
@@ -62,6 +31,7 @@ header {
         align-items: center;
         justify-content: space-between;
         height: 40px;
+        margin: 0px 40px;
 
         .logo {
             a {
@@ -90,6 +60,24 @@ header {
         }
     }
 }
+@media only screen and (max-width: 415px) {
+    header {
+        position: absolute;
+        .inner-header {
+            max-width: 414px;
+            margin: 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            .navigation {
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            
+        }
+    } 
+}
 
 //Banner
 .banner {
@@ -97,48 +85,79 @@ header {
     align-items: center;
     background-color: $babypowder;
     position: relative;
-    height: 100vh;
-    margin-bottom: 100px;
+    margin: 100px 40px;
+    min-width: inherit;
 
-    .row {
-        position: relative;
+    .banner-container {
+        width: 100%;
 
-        .main-text {
-            font-size: 5.8rem;
-            text-transform: uppercase;
-            letter-spacing: 30px;
-            font-weight: 700;
-            color: $babypowder;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-            mix-blend-mode: hard-light;
-            z-index: 9;
+        .row {
+            position: relative;
+
+            .main-text {
+                margin-left: 10px;
+                font-size: 6rem;
+                text-transform: uppercase;
+                letter-spacing: 30px;
+                font-weight: 700;
+                color: $babypowder;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                mix-blend-mode: hard-light;
+                z-index: 9;
+            }
+
+            .main-image {
+                width: 80%;
+                margin: 0 auto;
+                align-self: center;
+                justify-self: center;
+            }
         }
 
-        .main-image {
-            width: 80%;
-            margin: 0 auto;
-            align-self: center;
-            justify-self: center;
+        @media only screen and (max-width: 1024px) {
+            .row {
+                .main-text {
+                    font-size: 5.8rem;
+                    letter-spacing: 20px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
         }
-    }
 
-    .fixed-misc {
-        position: fixed;
-        top: 50%;
-        right: -100px;
-        transform: rotate(-90deg);
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 0.875rem;
-        letter-spacing: 1.5px;
-        color: $babypowder;
-        mix-blend-mode: difference;
-        z-index: 8;
+        @media only screen and (max-width: 768px) {
+            .row {
+                .main-text {
+                    font-size: 4.2rem;
+                    letter-spacing: 20px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 415px) {
+            margin-left: 0;
+            .row {
+                .main-text {
+                    font-size: 1rem;
+                    letter-spacing: 5px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -146,15 +165,25 @@ header {
 #about {
     position: relative;
     padding: 60px 0 160px;
+    @media only screen and (max-width: 415px) {
+        padding: 60px 0px;
+    }
     background: whitesmoke;
 
     .inner-text {
+        margin: 0px 40px;
+        @media only screen and (max-width: 415px) {
+            margin: 0px 20px;
+        }
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
         .content {
-            width: 50%;
+            width: 100%;
+            @media only screen and (max-width: 415px) {
+                width: 80%;
+            }
 
             h3 {
                 font-weight: 700;
@@ -171,23 +200,6 @@ header {
                 margin: 40px 0 72px;
             }
         }
-
-        .images {
-            width: 50%;
-            position: relative;
-            z-index: 7;
-            height: auto;
-            margin: 0 0 20px;
-
-            .top-right {
-                position: absolute;
-
-                width: 50%;
-                top: 0;
-                right: 10%;
-                z-index: 4;
-            }
-        }
     }
 }
 
@@ -195,12 +207,12 @@ header {
     position: relative;
     .inner-skills {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        margin: 40px 0;
+        margin: 40px 40px;
 
         .skills-header {
-            width: 40%;
+            width: 100%;
             h3 {
                 font-weight: 700;
                 text-transform: uppercase;
@@ -214,25 +226,20 @@ header {
                 font-weight: 300;
             }
         }
-        
         .inner-text {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            padding: 20px 30px;
-            background-color: $gainsboro;
+            grid-template-rows: repeat(4, 1fr);
 
             h4 {
-                font-weight: 500;
-                text-align: right;
-                font-size: 1.5rem;
-                letter-spacing: 1px;
-                margin: 10px;
+                margin: 10px 0px;
             }
 
-            p {
-                text-align: right;
-                margin: 12px;
+            .tech {
+                display: flex;
+                flex-direction: column;
+                
             }
+
         }
     }
 }
@@ -341,11 +348,14 @@ header {
                             font-weight: bold;
                         }
                     }
-
                     .hive {
                         max-width: 80%;
                         align-self: left;
                         justify-self: left;
+
+                        span {
+                            font-weight: bold;
+                        }
                     }
                 }
             }
@@ -353,13 +363,18 @@ header {
     }
 }
 
+
 //Contact
 #contact {
     background-color: $babypowder;
 
     .inner-text {
-        margin-bottom: 50px;
+        margin: 0px 40px 50px 40px;
+        @media only screen and (max-width: 415px) {
+            margin: 0px 20px;
+        }
         padding: 10px;
+        width: 90%;
 
         h3 {
             font-weight: 700;
@@ -372,6 +387,11 @@ header {
         .content-container {
             display: grid;
             grid-template-columns: 1.25fr 0.75fr;
+            @media only screen and (max-width: 415px) {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 0px;
+                width: 85%;
+            }
             grid-gap: 20px;
 
             .content {
@@ -387,14 +407,15 @@ header {
                 .info {
                     flex-direction: column;
                     text-align: center;
+                    
                     .resume {
                         margin: 0.5em;
 
                         a {
-                        color: $gunmetal;
-                        opacity: 0.15;
-                        text-decoration: none;
-                        font-size: 1.5rem;
+                            color: $gunmetal;
+                            opacity: 0.15;
+                            text-decoration: none;
+                            font-size: 1.5rem;
                         }
 
                         a:hover {
@@ -436,14 +457,11 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 flex-grow: 2;
-                margin: 0em 2em;
-                width: 80%;
-
-                h4 {
-                    font-size: 1.5rem;
-                    margin: 0 0 10px 0;
-                    text-align: center;
+                margin: 0rem 2rem;
+                @media only screen and (max-width: 415px) {
+                    margin: 0 0.5em;
                 }
+                width: 80%;
 
                 form input {
                     margin: 0.75em 0;
@@ -451,15 +469,36 @@ header {
                     border: $gunmetal solid 0.5px;
                 }
 
+                p {
+                    display: none;
+                }
+
                 .name-email {
                     display: flex;
                     flex-direction: column;
                     
+                    .input-name {
+                        width: 80%;
+                        height: 20px;
+                        margin-left: 18px;
+                        @media only screen and (max-width: 562px) {
+                            margin-left: auto;
+                        }
+                    }
+                    .input-email {
+                        width: 80%;
+                        height: 20px;
+                        margin-left: 18px;
+                        @media only screen and (max-width: 562px) {
+                            margin-left: auto;
+                        }
+                    }
                 }
 
                 .input-message {
                     width: 80%;
                     height: 80px;
+                    margin-left: auto;
                 }
 
                 form label {
@@ -467,11 +506,15 @@ header {
                 }
 
                 form button {
-                    padding: 0.75em 1.25em;
+                    padding: 0.75rem 1.25rem;
+                    @media only screen and (max-width: 415px) {
+                        padding: 0.75rem;
+                        font-size: 0.83em;
+                    }
                     background-color: #59A9C2;
                     color: white;
                     border: none;
-                    font-size: 1em;
+                    font-size: 1rem;
                     transition: all 1s ease;
                     outline: none;
                 }
@@ -479,10 +522,8 @@ header {
                 form button:hover {
                     background-color: $blue;
                 }
+            }
         }
-
-        }
-
     }
 }
 
@@ -494,23 +535,31 @@ header {
         flex-direction: row;
         justify-content: space-between;
         margin: 1%;
-        
-        .logo-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 3%);
-
-            .logo {
-                vertical-align: text-top;
-                max-width: 25px;
-                opacity: 0.2;
-            }
-            .logo:hover {
-                opacity: 1;
-            }
+        margin-left: 40px;
+        margin-right: 40px;
+        @media only screen and (max-width: 415px) {
+            margin-left: 20px;
+            margin-right: 20px;
         }
         
+        .logo-container {
+            .logo-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 15%);
+
+                .logo {
+                    vertical-align: text-top;
+                    max-width: 25px;
+                    opacity: 0.2;
+                }
+                .logo:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
         .copyright {
-            width: 50%;
+            width: 100%;
             p {
                 margin: 0;
                 color: $gunmetal;
@@ -519,7 +568,4 @@ header {
             }
         }
     }
-    
-
-    
 }
