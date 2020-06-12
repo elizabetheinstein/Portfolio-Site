@@ -17,14 +17,10 @@ body {
     background: $babypowder;
 }
 
-.container {
-    margin: 0 auto;
-}
-
 //Header
 header {
     height: 40px;
-    width: 95%;
+    width: 100%;
     position: fixed;
     top: 0px;
     z-index: 10;
@@ -35,7 +31,7 @@ header {
         align-items: center;
         justify-content: space-between;
         height: 40px;
-        margin-left: 40px;
+        margin: 0px 40px;
 
         .logo {
             a {
@@ -89,46 +85,63 @@ header {
     align-items: center;
     background-color: $babypowder;
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 40px;
+    margin: 100px 40px;
+    min-width: inherit;
 
-    .row {
-        position: relative;
+    .banner-container {
+        width: 100%;
 
-        .main-text {
-            font-size: 5.8rem;
-            text-transform: uppercase;
-            letter-spacing: 30px;
-            font-weight: 700;
-            color: $babypowder;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-            mix-blend-mode: hard-light;
-            z-index: 9;
-        }
-
-        .main-image {
-            width: 80%;
-            margin: 0 auto;
-            align-self: center;
-            justify-self: center;
-        }
-    }
-    @media only screen and (max-width: 415px) {
-        margin-left: 0;
         .row {
+            position: relative;
+
             .main-text {
-                font-size: 1rem;
-                letter-spacing: 5px;
+                font-size: 5.8rem;
+                text-transform: uppercase;
+                letter-spacing: 30px;
+                font-weight: 700;
+                color: $babypowder;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                mix-blend-mode: hard-light;
+                z-index: 9;
             }
+
             .main-image {
-                margin: 0;
-                width: 90%;
+                width: 80%;
+                margin: 0 auto;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .row {
+                .main-text {
+                    font-size: 4.2rem;
+                    letter-spacing: 20px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 415px) {
+            margin-left: 0;
+            .row {
+                .main-text {
+                    font-size: 1rem;
+                    letter-spacing: 5px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
             }
         }
     }
@@ -138,19 +151,22 @@ header {
 #about {
     position: relative;
     padding: 60px 0 160px;
+    @media only screen and (max-width: 415px) {
+        padding: 60px 0px;
+    }
     background: whitesmoke;
 
     .inner-text {
-        margin-left: 40px;
+        margin: 0px 40px;
         @media only screen and (max-width: 415px) {
-            margin-left: 20px;
+            margin: 0px 20px;
         }
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
         .content {
-            width: 90%;
+            width: 100%;
             @media only screen and (max-width: 415px) {
                 width: 80%;
             }
@@ -179,11 +195,10 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 40px 0;
-        margin-left: 40px;
+        margin: 40px 40px;
 
         .skills-header {
-            width: 40%;
+            width: 100%;
             h3 {
                 font-weight: 700;
                 text-transform: uppercase;
@@ -305,6 +320,15 @@ header {
                             font-weight: bold;
                         }
                     }
+                    .hive {
+                        max-width: 80%;
+                        align-self: left;
+                        justify-self: left;
+
+                        span {
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
         }
@@ -317,13 +341,12 @@ header {
     background-color: $babypowder;
 
     .inner-text {
-        margin-bottom: 50px;
-        margin-left: 40px;
+        margin: 0px 40px 50px 40px;
         @media only screen and (max-width: 415px) {
-            margin-left: 20px;
+            margin: 0px 20px;
         }
         padding: 10px;
-        width: 95%;
+        width: 90%;
 
         h3 {
             font-weight: 700;
@@ -485,8 +508,10 @@ header {
         justify-content: space-between;
         margin: 1%;
         margin-left: 40px;
+        margin-right: 40px;
         @media only screen and (max-width: 415px) {
             margin-left: 20px;
+            margin-right: 20px;
         }
         
         .logo-container {

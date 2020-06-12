@@ -62,7 +62,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" className="input-message" value={message} onChange={handleMessageChange} />
+                    <input name="message" className="input-message" value={message} onChange={handleMessageChange} />
                 </div>
                 <button type="submit">Send Message</button>
             </form>

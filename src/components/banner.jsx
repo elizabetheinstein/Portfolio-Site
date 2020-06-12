@@ -16,7 +16,7 @@ const Banner = () => {
     `);
     return (
         <div className="banner">
-            <div className="container">
+            <div className="banner-container">
                 <div className="row">
                     <div className="main-text">Elizabeth Einstein</div>
                     <div className="main-image">
@@ -24,7 +24,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 
