@@ -1,0 +1,49 @@
+$font: Chivo, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+
+//Colors
+$blue: #0091ad;
+$celeste: #9bf3f0;
+$gunmetal: #022b3a;
+$gainsboro: #ccdbdc;
+$babypowder: #fcfcfc;
+
+html,
+body {
+    font-family: font;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: $babypowder;
+}
+
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1440px) {
+        width: 1280px;
+        min-width: 1280px;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        width: 976px;
+        min-width: 976px;
+    }
+
+    @media only screen and (max-width: 976px) {
+        width: 768px;
+        min-width: 768px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 415px;
+        min-width: 415px;
+    }
+
+    @media only screen and (max-width: 415px) {
+        width: 200px;
+        min-width: 200px;
+    }
+}

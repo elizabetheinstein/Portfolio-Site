@@ -1,0 +1,35 @@
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: $babypowder;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .row {
+        position: relative;
+
+        .main-text {
+            font-size: 5.8rem;
+            text-transform: uppercase;
+            letter-spacing: 30px;
+            font-weight: 700;
+            color: $babypowder;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            mix-blend-mode: hard-light;
+            z-index: 9;
+        }
+
+        .main-image {
+            width: 80%;
+            margin: 0 auto;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}
