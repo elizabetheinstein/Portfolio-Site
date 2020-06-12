@@ -15,21 +15,29 @@ const Skills = () => {
                             <p>JavaScript</p>
                             <p>TypeScript</p>
                             <p>Python</p>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
                         </div>
                     </div>
                     <div>
-                        <h4>Databases</h4>
+                        <h4>Databases and ORMs</h4>
                         <div className="tech">
                             <p>MongoDB</p>
+                            <p>Mongoose</p>
                             <p>PostgreSQL</p>
+                            <p>Sequelize</p>
+                            <p>TypeORM</p>
                         </div>
                     </div>
                     <div>
                         <h4>Libraries and Frameworks</h4>
                         <div className="tech">
                             <p>Node.js</p>
+                            <p>Express</p>
                             <p>React</p>
-                            <p>Redux</p>
+                            <p>React-Redux</p>
+                            <p>Socket.io</p>
+                            <p>Gatsby</p>
                             <p>Apollo</p>
                         </div>
                     </div>
@@ -37,8 +45,9 @@ const Skills = () => {
                         <h4>DevOps</h4>
                         <div className="tech">
                             <p>Git</p>
+                            <p>Github</p>
                             <p>Heroku</p>
-                            <p>Travis CI</p>
+                            <p>Netlify</p>
                             <p>AWS</p>
                         </div>
                     </div>
