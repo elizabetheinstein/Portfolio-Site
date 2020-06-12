@@ -305,17 +305,12 @@ header {
                             font-weight: bold;
                         }
                     }
-
-                    .hive {
-                        max-width: 80%;
-                        align-self: left;
-                        justify-self: left;
-                    }
                 }
             }
         }
     }
 }
+
 
 //Contact
 #contact {
@@ -423,6 +418,10 @@ header {
                     border: $gunmetal solid 0.5px;
                 }
 
+                p {
+                    display: none;
+                }
+
                 .name-email {
                     display: flex;
                     flex-direction: column;
@@ -472,10 +471,8 @@ header {
                 form button:hover {
                     background-color: $blue;
                 }
+            }
         }
-
-        }
-
     }
 }
 
