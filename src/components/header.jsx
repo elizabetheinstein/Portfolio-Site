@@ -3,7 +3,6 @@ import React from "react";
 
 const Header = () => (
     <header>
-        {/* <div className="container"> */}
         <div className="inner-header">
             <div className="logo">
                 <Link to="/">Elizabeth Einstein</Link>
@@ -17,7 +16,6 @@ const Header = () => (
                 </nav>
             </div>
         </div>
-        {/* </div> */}
     </header>
 );
 

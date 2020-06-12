@@ -4,7 +4,6 @@ import ContactForm from './contact-form'
 const Contact = () => {
     return (
         <div id="contact">
-            {/* <div className="container"> */}
             <div className="inner-text">
                 <h3>Contact</h3>
                 <div className="content-container">
@@ -44,7 +43,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
         </div >
     );
 };

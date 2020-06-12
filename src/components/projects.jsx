@@ -23,7 +23,6 @@ const Projects = () => {
     `);
     return (
         <div id="projects">
-            {/* <div className="container"> */}
             <div className="inner-text">
                 <div className="content">
                     <h3> Projects </h3>
@@ -62,7 +61,6 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
         </div >
     );
 };

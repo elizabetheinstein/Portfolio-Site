@@ -3,7 +3,6 @@ import React from "react";
 const Skills = () => {
     return (
         <div className="skills">
-            {/* <div className="container"> */}
             <div className="inner-skills">
                 <div className="skills-header">
                     <h3>Skills</h3>
@@ -38,7 +37,6 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
         </div >
     );
 };

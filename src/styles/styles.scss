@@ -29,7 +29,7 @@ header {
     top: 0px;
     z-index: 10;
     background-color: $babypowder;
-    margin-left: 20px;
+    margin-left: 40px;
 
     .inner-header {
         display: flex;
@@ -91,7 +91,7 @@ header {
     position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 20px;
+    margin-left: 40px;
 
     .row {
         position: relative;
@@ -139,9 +139,9 @@ header {
     position: relative;
     padding: 60px 0 160px;
     background: whitesmoke;
-    margin-left: 20px;
 
     .inner-text {
+        margin-left: 40px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -169,12 +169,12 @@ header {
 
 .skills {
     position: relative;
-    margin-left: 20px;
     .inner-skills {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 40px 0;
+        margin-left: 40px;
 
         .skills-header {
             width: 40%;
@@ -317,6 +317,7 @@ header {
 
     .inner-text {
         margin-bottom: 50px;
+        margin-left: 40px;
         padding: 10px;
 
         h3 {
@@ -324,7 +325,7 @@ header {
             text-transform: uppercase;
             font-size: 1.8rem;
             letter-spacing: 1.5px;
-            margin: 10;
+            // margin: 10;
         }
 
         .content-container {
