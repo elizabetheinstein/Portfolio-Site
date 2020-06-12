@@ -29,13 +29,13 @@ header {
     top: 0px;
     z-index: 10;
     background-color: $babypowder;
-    margin-left: 40px;
 
     .inner-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 40px;
+        margin-left: 40px;
 
         .logo {
             a {
@@ -142,12 +142,18 @@ header {
 
     .inner-text {
         margin-left: 40px;
+        @media only screen and (max-width: 415px) {
+            margin-left: 20px;
+        }
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
         .content {
             width: 90%;
+            @media only screen and (max-width: 415px) {
+                width: 80%;
+            }
 
             h3 {
                 font-weight: 700;
@@ -318,19 +324,28 @@ header {
     .inner-text {
         margin-bottom: 50px;
         margin-left: 40px;
+        @media only screen and (max-width: 415px) {
+            margin-left: 20px;
+        }
         padding: 10px;
+        width: 95%;
 
         h3 {
             font-weight: 700;
             text-transform: uppercase;
             font-size: 1.8rem;
             letter-spacing: 1.5px;
-            // margin: 10;
+            margin: 10;
         }
 
         .content-container {
             display: grid;
             grid-template-columns: 1.25fr 0.75fr;
+            @media only screen and (max-width: 415px) {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 0px;
+                width: 85%;
+            }
             grid-gap: 20px;
 
             .content {
@@ -346,14 +361,15 @@ header {
                 .info {
                     flex-direction: column;
                     text-align: center;
+                    
                     .resume {
                         margin: 0.5em;
 
                         a {
-                        color: $gunmetal;
-                        opacity: 0.15;
-                        text-decoration: none;
-                        font-size: 1.5rem;
+                            color: $gunmetal;
+                            opacity: 0.15;
+                            text-decoration: none;
+                            font-size: 1.5rem;
                         }
 
                         a:hover {
@@ -395,14 +411,11 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 flex-grow: 2;
-                margin: 0em 2em;
-                width: 80%;
-
-                h4 {
-                    font-size: 1.5rem;
-                    margin: 0 0 10px 0;
-                    text-align: center;
+                margin: 0rem 2rem;
+                @media only screen and (max-width: 415px) {
+                    margin: 0 0.5em;
                 }
+                width: 80%;
 
                 form input {
                     margin: 0.75em 0;
@@ -414,11 +427,28 @@ header {
                     display: flex;
                     flex-direction: column;
                     
+                    .input-name {
+                        width: 80%;
+                        height: 20px;
+                        margin-left: 18px;
+                        @media only screen and (max-width: 562px) {
+                            margin-left: auto;
+                        }
+                    }
+                    .input-email {
+                        width: 80%;
+                        height: 20px;
+                        margin-left: 18px;
+                        @media only screen and (max-width: 562px) {
+                            margin-left: auto;
+                        }
+                    }
                 }
 
                 .input-message {
                     width: 80%;
                     height: 80px;
+                    margin-left: auto;
                 }
 
                 form label {
@@ -426,11 +456,15 @@ header {
                 }
 
                 form button {
-                    padding: 0.75em 1.25em;
+                    padding: 0.75rem 1.25rem;
+                    @media only screen and (max-width: 415px) {
+                        padding: 0.75rem;
+                        font-size: 0.83em;
+                    }
                     background-color: #59A9C2;
                     color: white;
                     border: none;
-                    font-size: 1em;
+                    font-size: 1rem;
                     transition: all 1s ease;
                     outline: none;
                 }
@@ -453,6 +487,10 @@ header {
         flex-direction: row;
         justify-content: space-between;
         margin: 1%;
+        margin-left: 40px;
+        @media only screen and (max-width: 415px) {
+            margin-left: 20px;
+        }
         
         .logo-container {
             .logo-grid {

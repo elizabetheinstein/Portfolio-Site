@@ -43,7 +43,6 @@ const ContactForm = () => {
 
     return (
         <div className="form-container">
-            <h4>Get in Touch</h4>
             <form onSubmit={handleSubmit}>
                 <div className="name-email">
                     <div className="name">
