@@ -1,110 +1,85 @@
-import React from "react"
+import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { Img } from "gatsby-image"
+import Img from "gatsby-image";
 
 const Tech = () => {
-    const data = useStaticQuery(graphql`
+    const { allFile } = useStaticQuery(graphql`
     {
-      languages: allFile(filter: {relativePath: {regex: "/(languages)/"}}) {
-        edges {
-            node {
-                name
-                relativePath
-                childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid
+        allFile(sort: {fields: name, order: ASC}, filter: {relativePath: {regex: "/(tech)/"}}) {
+            edges {
+                node {
+                    name
+                    id
+                    relativePath
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
                     }
                 }
             }
         }
-      }
-      libraries: allFile(filter: {relativePath: {regex: "/(libraries)/"}}) {
-        edges {
-            node {
-                name
-                relativePath
-                childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-      }
-      db: allFile(filter: {relativePath: {regex: "/(db)/"}}) {
-        edges {
-            node {
-                name
-                relativePath
-                childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-      }
-      devops: allFile(filter: {relativePath: {regex: "/(devops)/"}}) {
-        edges {
-            node {
-                name
-                relativePath
-                childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-      }
     }
-  `);
+    `);
 
-    const languages = data.languages.edges;
-    const libraries = data.libraries.edges;
-    const db = data.db.edges;
-    const devops = data.devops.edges;
+    const { edges } = allFile;
 
-    console.log("Lang", languages, "Lib", libraries, "db", db, "dev", devops)
+    const languages = edges.filter((edge) => (/languages/).test(edge.node.relativePath));
+    const libraries = edges.filter((edge) => (/libraries/).test(edge.node.relativePath));
+    const db = edges.filter((edge) => (/db/).test(edge.node.relativePath));
+    const devops = edges.filter((edge) => (/devops/).test(edge.node.relativePath));
 
 
     return (
-        <div className="technologies">
-            <div className="tech-container">
-                <div className="row">
-                    <div>
-                        <h4>Languages</h4>
-                        <div className="tech-list">
-                            {languages.map(node =>
-                                <Img fluid={node.childImageSharp.fluid} />
-                            )}
+        <div className="tech">
+            <div className="inner-tech">
+                <div className="tech-header">
+                    <h3>Technologies</h3>
+                </div>
+                <div className="inner-text">
+                    <div className="tech-section">
+                        <div className="section-head">
+                            <h4>Languages</h4>
+                            <div className="tech-list">
+                                {languages.map((edge, id) =>
+                                    <div className="logo-container">
+                                        <Img key={id} fluid={edge.node.childImageSharp.fluid} />
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                        <div className="section-head">
+                            <h4>Libraries and Frameworks</h4>
+                            <div className="tech-list">
+                                {libraries.map((edge, id) =>
+                                    <div className="logo-container">
+                                        <Img key={id} fluid={edge.node.childImageSharp.fluid} />
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                        <div className="section-head">
+                            <h4>Databases</h4>
+                            <div className="tech-list">
+                                {db.map((edge, id) =>
+                                    <div className="logo-container">
+                                        <Img key={id} fluid={edge.node.childImageSharp.fluid} />
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                        <div className="section-head">
+                            <h4>DevOps</h4>
+                            <div className="tech-list">
+                                {devops.map((edge, id) =>
+                                    <div className="logo-container">
+                                        <Img key={id} fluid={edge.node.childImageSharp.fluid} />
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Libraries and Frameworks</h4>
-                        <div className="tech-list">
-                            {libraries.map(node =>
-                                <Img fluid={node.childImageSharp.fluid} />
-                            )}
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Databases</h4>
-                        <div className="tech-list">
-                            {db.map(node =>
-                                <Img fluid={node.childImageSharp.fluid} />
-                            )}
-                        </div>
-                    </div>
-                    <div>
-                        <h4>DevOps</h4>
-                        <div className="tech-list">
-                            {devops.map(node =>
-                                <Img fluid={node.childImageSharp.fluid} />
-                            )}
-                        </div>
-                    </div>
-                </div >
+                </div>
             </div>
         </div>
     );

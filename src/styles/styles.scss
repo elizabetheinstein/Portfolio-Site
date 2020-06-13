@@ -203,15 +203,15 @@ header {
     }
 }
 
-.skills {
+.tech {
     position: relative;
-    .inner-skills {
+    .inner-tech {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 40px 40px;
 
-        .skills-header {
+        .tech-header {
             width: 100%;
             h3 {
                 font-weight: 700;
@@ -227,35 +227,37 @@ header {
             }
         }
         .inner-text {
-            display: grid;
-            grid-template-rows: repeat(4, 1fr);
-
             h4 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.5rem;
                 margin: 10px 0px;
+                letter-spacing: 0.3px;
+                border-top: $gunmetal solid;
             }
 
-            .technologies {
+            .tech-section {
                 display: flex;
                 flex-direction: column;
+                margin: 10px 0px;
 
-                .tech-container {
+                .section-head {
+                    flex-direction: row;
+                    
                     .tech-list {
                         display: flex;
-                        flex-wrap: wrap;
-                }
+                        flex-flow: column;
+                        max-width: 8%;
+                        max-height: 10%;
+                        margin: 20px 20px;
 
-                    .tech-img {
-                        max-height: 7vmin;
-                        margin: 0 2vw 1vw;
-                        &:hover {
-                            transform: scale(1.2);
+                        .logo-container {
+                            flex-direction: row;
+                            margin: 10px;
                         }
                     }
+                    
                 }
-                
-                
             }
-
         }
     }
 }
