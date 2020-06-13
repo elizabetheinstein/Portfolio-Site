@@ -43,13 +43,7 @@ const ContactForm = () => {
 
     return (
         <div className="form-container">
-            <form onSubmit={handleSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="contact" value="contact" />
-                <p hidden>
-                    <label>
-                        <input name="bot-field" />
-                    </label>
-                </p>
+            <form onSubmit={handleSubmit} method="post">
                 <div className="name-email">
                     <div className="name">
                         <label htmlFor="from_name">Name</label>
