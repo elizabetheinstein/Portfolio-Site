@@ -12,7 +12,7 @@ const Footer = () => {
                     }
                 }
             }
-            github: file(relativePath: { eq: "technologies/devops/github.png" }) {
+            github: file(relativePath: { eq: "tech/devops/03-github.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 300) {
                         ...GatsbyImageSharpFluid

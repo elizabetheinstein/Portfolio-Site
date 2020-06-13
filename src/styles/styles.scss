@@ -234,9 +234,25 @@ header {
                 margin: 10px 0px;
             }
 
-            .tech {
+            .technologies {
                 display: flex;
                 flex-direction: column;
+
+                .tech-container {
+                    .tech-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                }
+
+                    .tech-img {
+                        max-height: 7vmin;
+                        margin: 0 2vw 1vw;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                
                 
             }
 
