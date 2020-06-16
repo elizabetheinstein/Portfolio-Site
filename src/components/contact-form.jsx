@@ -10,17 +10,17 @@ const ContactForm = () => {
         setName("");
         setEmail("");
         setMessage("");
-    }
+    };
 
     const handleNameChange = (evt) => {
         setName(evt.target.value);
-    }
+    };
     const handleEmailChange = (evt) => {
         setEmail(evt.target.value);
-    }
+    };
     const handleMessageChange = (evt) => {
         setMessage(evt.target.value);
-    }
+    };
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -39,7 +39,7 @@ const ContactForm = () => {
         );
 
         resetForm();
-    }
+    };
 
     return (
         <div className="form-container">
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 <button type="submit">Send Message</button>
             </form>
         </div >
-    )
-}
+    );
+};
 
 export default ContactForm;

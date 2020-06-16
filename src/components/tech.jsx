@@ -29,9 +29,6 @@ const Tech = () => {
     const db = edges.filter((edge) => (/db/).test(edge.node.relativePath));
     const devops = edges.filter((edge) => (/devops/).test(edge.node.relativePath));
 
-    console.log(languages)
-
-
     return (
         <div className="tech">
             <div className="inner-tech">

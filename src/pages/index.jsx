@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/styles.scss";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import Tech from "../components/Tech";
-import Footer from "../components/Footer";
+import Header from "../components/Header.jsx";
+import Banner from "../components/Banner.jsx";
+import About from "../components/About.jsx";
+import Tech from "../components/Tech.jsx";
+import Projects from "../components/Projects.jsx";
+import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
 
 const IndexPage = () => (
     <div>
