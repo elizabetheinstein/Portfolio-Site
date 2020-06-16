@@ -44,21 +44,21 @@ const ContactForm = () => {
     return (
         <div className="form-container">
             <form onSubmit={handleSubmit} method="post">
-                <div className="name-email">
-                    <div className="name">
-                        <label htmlFor="from_name">Name</label>
-                        <input type="text" name="name" className="input-name" value={name} onChange={handleNameChange} />
-                    </div>
-                    <div className="email">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" name="email" className="input-email" value={email} onChange={handleEmailChange} />
-                    </div>
+                <div className="name">
+                    <label htmlFor="from_name">Name</label>
+                    <input type="text" name="name" className="input-name" value={name} onChange={handleNameChange} />
                 </div>
-                <div>
+                <div className="email">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" className="input-email" value={email} onChange={handleEmailChange} />
+                </div>
+                <div className="message">
                     <label htmlFor="message">Message</label>
-                    <input name="message" className="input-message" value={message} onChange={handleMessageChange} />
+                    <textarea name="message" className="input-message" value={message} onChange={handleMessageChange} />
                 </div>
-                <button type="submit">Send Message</button>
+                <div className="button">
+                    <button type="submit">Send Message</button>
+                </div>
             </form>
         </div >
     );
