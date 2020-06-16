@@ -9,7 +9,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Elizabeth Einstein`,
+    title: `Elizabeth Einstein | Portfolio`,
     description: `Elizabeth Einstein's personal portfolio. Please explore!`,
     author: `Elizabeth Einstein`,
   },
@@ -32,7 +32,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`
+        display: `minimal-ui`,
+        icon: `src/images/favicon-ein.png`,
       },
     },
     `gatsby-plugin-sass`,

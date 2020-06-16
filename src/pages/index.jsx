@@ -1,15 +1,17 @@
 import React from "react";
 import "../styles/styles.scss";
-import Header from "../components/Header.jsx";
-import Banner from "../components/Banner.jsx";
-import About from "../components/About.jsx";
-import Tech from "../components/Tech.jsx";
-import Projects from "../components/Projects.jsx";
-import Contact from "../components/Contact.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../components/header";
+import Banner from "../components/banner";
+import About from "../components/about";
+import Tech from "../components/tech";
+import Projects from "../components/projects";
+import Contact from "../components/contact";
+import Footer from "../components/footer";
+import SEO from '../components/seo'
 
 const IndexPage = () => (
     <div>
+        <SEO title="Elizabeth Einstein | Portfolio" />
         <Header />
         <Banner />
         <About />
