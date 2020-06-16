@@ -203,15 +203,15 @@ header {
     }
 }
 
-.tech {
+.skills {
     position: relative;
-    .inner-tech {
+    .inner-skills {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 40px 40px;
 
-        .tech-header {
+        .skills-header {
             width: 100%;
             h3 {
                 font-weight: 700;
@@ -227,39 +227,19 @@ header {
             }
         }
         .inner-text {
-            display: flex;
-            flex-direction: column;
-            
-            .section-head {
-                flex-direction: column;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
 
-                h4 {
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    font-size: 1.5rem;
-                    margin: 10px 0px;
-                    letter-spacing: 0.4px;
-                    border-top: $gunmetal solid;
-                }
-                
-                .tech-list {
-                    display: grid;
-                    grid-template-columns: repeat(7, 1fr);
-                    max-width: 100%;
-                    margin: 0px 0px 30px 0px;
-                    align-items: center;
-
-                    .logo-container {
-                        margin: 10px;
-                        max-height: 50%;
-                        max-width: 60%;
-                        @media only screen and (max-width: 415px) {
-                            max-height: 100%;
-                            max-width: 100%;
-                        }
-                        
-                    }
-                }
+            h4 {
+                margin: 10px 0px;
             }
+
+            .tech {
+                display: flex;
+                flex-direction: column;
+                
+            }
+
         }
     }
 }
@@ -527,7 +507,6 @@ header {
 
                 form button {
                     padding: 0.75rem 1.25rem;
-                    font-size: 1rem;
                     @media only screen and (max-width: 415px) {
                         padding: 0.75rem;
                         font-size: 0.83em;
@@ -535,7 +514,7 @@ header {
                     background-color: #59A9C2;
                     color: white;
                     border: none;
-                    
+                    font-size: 1rem;
                     transition: all 1s ease;
                     outline: none;
                 }

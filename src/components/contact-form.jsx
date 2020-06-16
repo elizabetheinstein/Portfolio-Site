@@ -10,17 +10,17 @@ const ContactForm = () => {
         setName("");
         setEmail("");
         setMessage("");
-    };
+    }
 
     const handleNameChange = (evt) => {
         setName(evt.target.value);
-    };
+    }
     const handleEmailChange = (evt) => {
         setEmail(evt.target.value);
-    };
+    }
     const handleMessageChange = (evt) => {
         setMessage(evt.target.value);
-    };
+    }
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -39,11 +39,17 @@ const ContactForm = () => {
         );
 
         resetForm();
-    };
+    }
 
     return (
         <div className="form-container">
-            <form onSubmit={handleSubmit} method="post">
+            <form onSubmit={handleSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="contact" value="contact" />
+                <p hidden>
+                    <label>
+                        <input name="bot-field" />
+                    </label>
+                </p>
                 <div className="name-email">
                     <div className="name">
                         <label htmlFor="from_name">Name</label>
@@ -61,7 +67,7 @@ const ContactForm = () => {
                 <button type="submit">Send Message</button>
             </form>
         </div >
-    );
-};
+    )
+}
 
 export default ContactForm;
