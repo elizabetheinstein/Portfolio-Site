@@ -31,6 +31,7 @@ header {
         align-items: center;
         justify-content: space-between;
         height: 40px;
+        width: 90%;
         margin: 0px 40px;
 
         .logo {
@@ -127,7 +128,7 @@ header {
                 }
                 .main-image {
                     margin: 0;
-                    width: 100%;
+                    width: 99%;
                 }
             }
         }
@@ -135,7 +136,7 @@ header {
         @media only screen and (max-width: 900px) {
             .row {
                 .main-text {
-                    font-size: 5.8rem;
+                    font-size: 5rem;
                     letter-spacing: 20px;
                 }
                 .main-image {
@@ -174,7 +175,7 @@ header {
         @media only screen and (max-width: 570px) {
             .row {
                 .main-text {
-                    font-size: 1.8rem;
+                    font-size: 2.2rem;
                     letter-spacing: 20px;
                 }
                 .main-image {
@@ -184,6 +185,19 @@ header {
             }
         }
 
+        @media only screen and (max-width: 476px) {
+            margin-left: 0;
+            .row {
+                .main-text {
+                    font-size: 1.5rem;
+                    letter-spacing: 5px;
+                }
+                .main-image {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
         @media only screen and (max-width: 415px) {
             margin-left: 0;
             .row {
