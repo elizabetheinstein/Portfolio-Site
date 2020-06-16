@@ -1,19 +1,19 @@
 import React from "react";
 import "../styles/styles.scss";
-import Header from "../components/header";
-import Banner from "../components/banner";
-import About from "../components/about";
-import Projects from "../components/projects";
-import Contact from "../components/contact";
-import Skills from "../components/skills";
-import Footer from "../components/footer";
+import Header from "../components/Header.jsx";
+import Banner from "../components/Banner.jsx";
+import About from "../components/About.jsx";
+import Tech from "../components/Tech.jsx";
+import Projects from "../components/Projects.jsx";
+import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
 
 const IndexPage = () => (
     <div>
         <Header />
         <Banner />
         <About />
-        <Skills />
+        <Tech />
         <Projects />
         <Contact />
         <Footer />
