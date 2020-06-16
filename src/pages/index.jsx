@@ -7,7 +7,7 @@ import Tech from "../components/tech";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import SEO from '../components/seo'
+import SEO from '../components/seo';
 
 const IndexPage = () => (
     <div>
